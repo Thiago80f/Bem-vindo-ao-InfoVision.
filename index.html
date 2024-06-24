@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> InfoVision</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seu Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+            <h1>Bem-vindo ao  InfoVision</h1>
+            <button class="menu-toggle">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        <div><button id="openModal">Clique para mais informações</button>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Algumas informações adicionais...</p>
+                    <p>Introdução à Informática
+                        A informática é uma área vastíssima que abrange tudo, desde o hardware físico dos computadores até os complexos algoritmos que alimentam a inteligência artificial. Aqui estão alguns tópicos-chave:
+                        
+
+
+                        Hardware
+                        O hardware é a base física de qualquer sistema de informática. Ele inclui componentes como a Unidade Central de Processamento (CPU), que é o "cérebro" do computador, a memória RAM, onde os dados temporários são armazenados, e dispositivos de armazenamento como discos rígidos (HDDs) e unidades de estado sólido (SSDs), onde os dados são armazenados permanentemente. Além disso, periféricos como monitores, teclados e mouses permitem a interação humana com os sistemas computacionais.
+                        
+
+
+                        Software
+                        O software é a parte lógica dos sistemas de informática. Ele pode ser dividido em duas categorias principais: software de sistema e software aplicativo. O software de sistema inclui sistemas operacionais como Windows, macOS e Linux, que gerenciam os recursos de hardware e fornecem uma interface para o usuário. Os aplicativos são programas que executam tarefas específicas, como navegadores de internet, editores de texto e softwares de design gráfico.
+                        
+
+
+
+                        Redes de Computadores
+                        As redes de computadores permitem a comunicação entre diferentes dispositivos. A internet é a maior e mais conhecida rede, conectando bilhões de dispositivos em todo o mundo. Redes locais (LANs) conectam dispositivos dentro de um espaço limitado, como uma casa ou escritório. Protocolos como TCP/IP garantem a transferência de dados de maneira eficiente e segura através dessas redes.
+                        
+
+
+
+                        Segurança da Informação
+                        A segurança da informação é crucial para proteger dados sensíveis contra acessos não autorizados e ciberataques. Técnicas como criptografia, firewalls e autenticação multifatorial são usadas para proteger informações. A segurança cibernética também envolve práticas como a educação dos usuários sobre os riscos e a implementação de políticas de segurança robustas.
+                        
+
+
+                        Inteligência Artificial
+                        A inteligência artificial (IA) é um dos campos mais excitantes e em rápido crescimento da informática. IA envolve o desenvolvimento de algoritmos e sistemas que podem realizar tarefas que normalmente requerem inteligência humana, como reconhecimento de fala, tradução de idiomas, e diagnósticos médicos. Subcampos importantes incluem aprendizado de máquina (machine learning), onde sistemas melhoram automaticamente através da experiência, e visão computacional, que permite aos sistemas "ver" e interpretar o mundo visualmente.
+                        
+
+
+
+
+                        Desenvolvimento de Software
+                        O desenvolvimento de software é o processo de concepção, especificação, design, programação, documentação, testes e manutenção de aplicativos, frameworks ou outros componentes de software. As metodologias de desenvolvimento de software, como Agile e Scrum, ajudam a organizar e gerenciar este processo de maneira eficiente, promovendo a colaboração e a entrega contínua de valor.
+                        
+
+
+
+                        Conclusão
+                        A informática é um campo dinâmico e multifacetado, fundamental para o funcionamento da sociedade moderna. Desde o hardware que executa operações físicas até o software que dirige essas operações, passando pela segurança e a inteligência artificial que estão transformando nosso mundo, a informática continua a evoluir, oferecendo novas oportunidades e desafios.</p>
+                </div>
+            </div>
+            </div>
+        
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Mostra Para Voçê Aonde A programação Pode Té Levar.</p>
+            <img><img src="https://images.educamaisbrasil.com.br/content/noticias/dicas-para-comecar-na-carreira-de-programacao-em-2024_g.jpg" alt="">
+
+            <section id="calculadora-hardware">
+                <h2>Calculadora de Recursos de Hardware</h2>
+                <form>
+                    <label for="tipo-projeto">Tipo de Projeto:</label>
+                    <select id="tipo-projeto" name="tipo-projeto">
+                        <option value="jogos">Jogos</option>
+                        <option value="edicao-video">Edição de Vídeo</option>
+                        <option value="programacao">Programação</option>
+                    </select>
+                    <button type="button" onclick="calcularRequisitos()">Calcular</button>
+                </form>
+                <div id="resultado"></div>
+            </section>
+            
+            <section id="simulador-pc">
+                <h2>Simulador de Montagem de PC</h2>
+                <form>
+                    <label for="cpu">Escolha a CPU:</label>
+                    <select id="cpu">
+                        <option value="i5">Intel Core i5</option>
+                        <option value="i7">Intel Core i7</option>
+                        <option value="ryzen5">AMD Ryzen 5</option>
+                    </select>
+                    <label for="gpu">Escolha a GPU:</label>
+                    <select id="gpu">
+                        <option value="gtx1650">NVIDIA GTX 1650</option>
+                        <option value="rtx3060">NVIDIA RTX 3060</option>
+                        <option value="rx570">AMD RX 570</option>
+                    </select>
+                    <label for="ram">Escolha a RAM:</label>
+                    <select id="ram">
+                        <option value="8gb">8GB</option>
+                        <option value="16gb">16GB</option>
+                        <option value="32gb">32GB</option>
+                    </select>
+                    <button type="button" onclick="mostrarConfiguracao()">Mostrar Configuração</button>
+                </form>
+                <div id="resultado-simulador"></div>
+            </section> 
+
+
+            <section id="tutorial-programacao">
+                <h2>Tutorial Interativo de Programação</h2>
+                <textarea id="editor-codigo" rows="10" cols="50">// Escreva seu código JavaScript aqui...</textarea><br>
+                <button type="button" onclick="executarCodigo()">Executar Código</button>
+                <div id="resultado-codigo"></div>
+            </section>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <p>Detalhes sobre os serviços oferecidos.</p>
+            <h3>Desenvolvimento de Software
+                Oferecemos soluções de desenvolvimento de software personalizadas para atender às necessidades específicas do seu negócio. Nossos serviços incluem</h3>
+                <p>Desenvolvimento de Aplicativos Web: Criação de aplicativos web responsivos e escaláveis.
+                    Desenvolvimento de Aplicativos Móveis: Desenvolvimento de aplicativos para Android e iOS.
+                    Desenvolvimento de Software Sob Medida: Soluções de software personalizadas para otimizar processos empresariais.</p>
+            <h3>Suporte Técnico e Manutenção</h3> 
+            <p>Suporte Técnico Remoto e On-Site: Assistência técnica rápida e eficiente, seja remotamente ou no local.
+                Manutenção Preventiva e Corretiva: Monitoramento contínuo e reparos necessários para evitar falhas.
+                Instalação e Configuração de Equipamentos: Configuração de novos equipamentos e atualizações de hardware.</p>
+                <h3>Segurança da Informação</h3>
+                <p>Análise de Vulnerabilidades e Testes de Penetração: Identificação de falhas de segurança e testes rigorosos.
+                    Implementação de Firewalls e Sistemas de Detecção de Intrusões: Proteção contra ameaças e ataques cibernéticos.
+                    Criptografia e Gerenciamento de Chaves: Garantia de que seus dados estejam seguros e protegidos.</p> 
+                <h3>Consultoria em TI</h3>
+                <p>Ajudamos a transformar a tecnologia em um diferencial estratégico para o seu negócio:
+
+                    Planejamento e Estratégia de TI: Desenvolvimento de estratégias tecnológicas alinhadas aos objetivos empresariais.
+                    Gerenciamento de Projetos de TI: Coordenação e implementação de projetos de TI do início ao fim.
+                    Auditoria de Sistemas: Avaliação de sistemas atuais e recomendações para melhorias.</p>
+                    <h3>Desenvolvimento e Design de Sites</h3>
+                    <p>Desenvolvimento de Sites Responsivos: Sites que se adaptam a qualquer dispositivo, garantindo uma ótima experiência do usuário.
+                        Design UI/UX: Interfaces intuitivas e designs atraentes para maximizar a interação do usuário.
+                        Otimização para Motores de Busca (SEO): Melhorias para aumentar a visibilidade do seu site nos motores de busca.</p>
+                    <h3>Backup e Recuperação de Dados
+                        Serviços de backup e recuperação para proteger seus dados essenciais</h3>    
+                    <p>Soluções de Backup Automatizado: Backup regular e seguro de todos os seus dados importantes.
+                        Recuperação de Dados: Recuperação rápida de dados perdidos ou corrompidos.
+                        Planos de Continuidade de Negócios: Estratégias para minimizar o impacto de desastres e garantir a continuidade das operações.</p>
+
+        </section>
+        <section id="contato">
+            <section id="contato">
+                <h2>Contato</h2>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/th_informatica__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15528/15528043.png" alt="Instagram" class="social-icon">
+
+
+                            <a href="https://wa.me/5533998756987?text=ol%C3%A1%20em%20que%20posso%20ajudar%3F" target="_blank" class="whatsapp-button">Fale comigo no WhatsApp</a>
+                                <img src="https://cdn-icons-png.flaticon.com/128/3536/3536445.png" alt="Youtuber" class="social-icon">
+
+
+                    </a>
+                </div>
+                <div class="faq-item">
+                    <h3>Qual é o seu horário de atendimento?</h3>
+                    <p>Nosso horário de atendimento é de segunda a sexta, das 9h às 18h.</p>
+                </div>  
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Site Impactante Site Criado Por @Thiago De Amorim Moreira</p>
+
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
